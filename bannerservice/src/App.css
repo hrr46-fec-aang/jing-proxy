@@ -1,0 +1,229 @@
+body{
+  font-family: sans-serif;
+}
+img {
+  height: 30px;
+  width: 30px;
+}
+
+.banner-search {
+  flex: 0 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.banner-search__input {
+  font-size: 14px;
+  width: 0;
+  max-width: calc(100vw - 8.5em);
+  padding: 0;
+  border: none;
+  background: transparent;
+  text-indent: 0.5em;
+  margin-right: 0;
+  color: white;
+  text-shadow: 0 0 0 #666;
+  transition: all 250ms;
+}
+
+.banner-search__input::-webkit-input-placeholder{
+  color: #666;
+  text-shadow: none;
+  -webkit-text-fill-color: initial;
+}
+
+.banner-search__icon {
+  font-size: 1em;
+  width: 1em;
+  height: 1em;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  fill: lightgrey;
+  background: transparent;
+  transition: color 250ms;
+}
+
+.banner-search__input:focus,
+.banner-search__icon:focus {
+  outline: none;
+}
+
+.banner-search__clear {
+  display: none;
+  margin-right: 0.25em;
+  margin-bottom: -1px;
+}
+
+.banner-search--active .banner-search__input {
+  margin-right: 0.5em;
+  width: 400px;
+}
+
+.banner-search--active .banner-search__clear {
+  display: block;
+}
+
+.banner-search__results {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.banner-sub {
+  display: block;
+  background: white;
+}
+
+.banner-sub__inner {
+  min-width: 320px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  text-align: right;
+}
+
+.banner-sub__link {
+  display: inline-block;
+  font-size: 0.8em;
+  padding: 0.4em 0;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.banner-sub__link:not(:last-child) {
+  margin-right: 1.5em;
+}
+
+.banner-sub__link:first-of-type {
+  margin-left: 0;
+}
+
+@media (max-width: 720px) {
+  .banner-sub {
+      display: none;
+  }
+}
+.banner {
+  position: relative;
+  background: white;
+  display: inline;
+}
+
+.banner__inner {
+  display: flex;
+  width: 100%;
+  min-width: 320px;
+  max-width: 960px;
+  min-height: 70px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+  align-items: center;
+  background-image: url('https://s3-us-east-2.amazonaws.com/rvshare-wordpress/wp-content/uploads/2019/05/15171042/hipcamp-logo-1024x1024.png');
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: 0% 40%;
+
+
+}
+
+.banner__mobile {
+  display: none;
+  fill: white;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  transition: color 250ms;
+}
+
+.banner__mobile svg {
+  width: 20px;
+  height: 20px;
+}
+
+.banner__logo {
+  margin: auto auto auto 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: x-large;
+  letter-spacing: 0.5px;
+  color: black;
+  transition: all 250ms;
+}
+.banner__logo:hover {
+  color: #40d9ac;
+}
+
+.banner__items {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.banner__item {
+  display: inline-block;
+  font-size: 0.8em;
+  padding: 1.5em;
+  cursor: pointer;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 250ms;
+  font-weight: bold;
+}
+
+.banner__item:hover {
+color:  #40d9ac;
+}
+
+.banner__item--active {
+  background: white;
+  color: black;
+}
+
+.banner__item--offset {
+  margin-right: -1.5em;
+}
+
+.banner--search .banner__item {
+  pointer-events: none;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 1.5em 0;
+  margin-right: -35px;
+  opacity: 0;
+}
+
+.banner--overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  background: transparent;
+}
+
+@media (max-width: 720px) {
+  .banner__mobile { display: block; }
+  .banner__items { display: none; }
+  .banner--search .banner__logo {
+      pointer-events: none;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin-right: -35px;
+      letter-spacing: -1em;
+      opacity: 0;
+  }
+}
+

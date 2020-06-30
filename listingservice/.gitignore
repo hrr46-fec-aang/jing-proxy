@@ -1,0 +1,8 @@
+## MAC files ##
+.DS_Store
+
+node_modules
+coverage
+
+# Compiled Dirs
+bundle.js

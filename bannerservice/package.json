@@ -1,0 +1,46 @@
+{
+  "name": "bannerservice",
+  "version": "1.0.0",
+  "description": "banner for campaang",
+  "main": "index.js",
+  "jest": {},
+  "scripts": {
+    "build": "webpack -d --watch",
+    "start": "nodemon ./server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrr46-fec-aang/bannerservice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrr46-fec-aang/bannerservice/issues"
+  },
+  "homepage": "https://github.com/hrr46-fec-aang/bannerservice#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-transform-runtime": "^7.10.3",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-jest": "^26.1.0",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "body-parser": "^1.19.0",
+    "css-loader": "^3.6.0",
+    "eslint": "^7.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "react": "^16.13.1",
+    "react-banner": "^1.0.3",
+    "react-dom": "^16.13.1",
+    "style-loader": "^1.2.1",
+    "styled-components": "^5.1.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {}
+}

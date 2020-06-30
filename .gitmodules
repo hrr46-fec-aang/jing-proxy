@@ -1,0 +1,15 @@
+[submodule "https:/github.com/hrr46-fec-aang/bannerservice.git"]
+	path = https:/github.com/hrr46-fec-aang/bannerservice.git
+	url = https://github.com/hrr46-fec-aang/photoservice.git
+[submodule "bookingservice"]
+	path = bookingservice
+	url = https://github.com/hrr46-fec-aang/bookingservice.git
+[submodule "listingservice"]
+	path = listingservice
+	url = https://github.com/hrr46-fec-aang/listingservice.git
+[submodule "bannerservice"]
+	path = bannerservice
+	url = https://github.com/hrr46-fec-aang/bannerservice.git
+[submodule "photoservice"]
+	path = photoservice
+	url = https://github.com/hrr46-fec-aang/photoservice.git

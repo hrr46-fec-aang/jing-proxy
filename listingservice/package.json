@@ -1,0 +1,71 @@
+{
+  "name": "listingservice",
+  "version": "1.0.0",
+  "description": "CampAang site listing",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/start.js",
+    "build": "webpack -d --watch",
+    "buildCI": "webpack -d",
+    "test": "jest --detectOpenHandles",
+    "testBE": "jest ./test/BE.test.js",
+    "testFE": "jest ./test/FE.test.js",
+    "db:seed": "node database/seed.js",
+    "test:coverage": "jest --coverageDirectory='coverage'  --coverage --colors"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js?$": "babel-jest",
+      "^.+\\.jsx$": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrr46-fec-aang/listingservice.git"
+  },
+  "author": "Danica Fisher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrr46-fec-aang/listingservice/issues"
+  },
+  "homepage": "https://github.com/hrr46-fec-aang/listingservice#readme",
+  "dependencies": {
+    "@babel/runtime": "^7.10.3",
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-regular-svg-icons": "^5.13.1",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "cors": "^2.8.5",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "font-awesome": "^4.7.0",
+    "jest": "^26.0.1",
+    "jquery": "^3.5.1",
+    "mongoose": "^5.9.19",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.4",
+    "puppeteer": "^4.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "regenerator-runtime": "^0.13.5",
+    "styled-components": "^5.1.1",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-transform-runtime": "^7.10.3",
+    "regenerator-runtime": "^0.13.5",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.5.0",
+    "nodemon": "^2.0.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  }
+}

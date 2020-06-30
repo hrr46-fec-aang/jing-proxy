@@ -1,0 +1,7 @@
+node_modules
+public/bundle.js
+config.js
+.DS_Store
+npm-debug.log
+.env
+package-lock.json

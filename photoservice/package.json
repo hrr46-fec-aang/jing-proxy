@@ -1,0 +1,63 @@
+{
+  "name": "camp-ang",
+  "version": "1.0.0",
+  "description": "Clone of hipcamp photo carousel",
+  "main": "index.js",
+  "scripts": {
+    "test:server": "jest ./_test_/server.test.js",
+    "test:client": "jest ./_test_/client.test.js",
+    "test": "jest --update-snapshot --detectOpenHandles",
+    "test:coverage": "jest --coverageDirectory='coverage'  --coverage --colors",
+    "start": "nodemon server/index.js",
+    "build": "webpack -d --watch",
+    "db:setup": "node server/database/seed.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrr46-fec-aang/photoservice.git"
+  },
+  "author": "Jing Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrr46-fec-aang/photoservice/issues"
+  },
+  "homepage": "https://github.com/hrr46-fec-aang/photoservice#readme",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest": "^26.0.1",
+    "nodemon": "^2.0.4",
+    "sinon": "^9.0.2",
+    "supertest": "^4.0.2",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.10.3",
+    "@babel/polyfill": "^7.10.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.29",
+    "@fortawesome/free-solid-svg-icons": "^5.13.1",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "axios": "^0.19.2",
+    "babel-jest": "^26.1.0",
+    "body-parser": "^1.19.0",
+    "css-loader": "^3.6.0",
+    "eslint": "^7.2.0",
+    "express": "^4.17.1",
+    "faker": "^4.1.0",
+    "jquery": "^3.5.1",
+    "moment": "^2.27.0",
+    "mongoose": "^5.9.19",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "style-loader": "^1.2.1",
+    "styled-components": "^5.1.1"
+  }
+}

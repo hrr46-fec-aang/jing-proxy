@@ -1,0 +1,139 @@
+.container {
+  position: relative;
+}
+
+.booking {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  background-color: rgb(255, 255, 255);
+  max-width: 20em;
+  min-width: 20em;
+  margin: 50px;
+  border-style: solid;
+  border-color: #ebebeb;
+  border-width: 0.01em;
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  z-index: 2;
+}
+h2 {
+  margin: 7px 5px 0px 15px;
+  text-align: left;
+}
+
+input[type='number']:focus {
+  outline: none;
+  border-style: solid !important;
+  border-color: #40d9ac;
+  border-radius: 5px;
+}
+input[type='text']:focus {
+  outline: none;
+  border-style: solid !important;
+  border-color: #40d9ac;
+  border-radius: 5px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 35% 35% 30%;
+  grid-template-rows: 80px;
+  background-color: white;
+
+  border-top: solid;
+  border-bottom: solid;
+  border-color: #ebebeb;
+  border-width: 0.01em;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0px 0px 0px;
+  font-size: 15px;
+}
+input:focus {
+  background-color: lightgray;
+}
+
+input,
+#checkinCalendar {
+  width: 5em;
+  margin: 0px 11px 0px 0px;
+  text-align: left;
+  border-style: none;
+}
+
+input,
+#checkoutCalendar {
+  width: 5em;
+  margin: 0px 11px 0px 0px;
+  text-align: left;
+  border-style: none;
+}
+input,
+#guestCount {
+  width: 5em;
+  text-align: center;
+  border-style: none;
+}
+
+.book {
+  border-top: solid;
+  border-color: #ebebeb;
+  border-width: 0.01em;
+  padding: 10px;
+}
+
+#pernight {
+  text-align: left;
+  font-size: small;
+  font-weight: 300;
+  color: #757575;
+  padding: 0px 0px 10px 0px;
+  margin: 0px 0px 0px 15px;
+}
+
+.checkintxt {
+  text-align: left !important;
+  margin: 0px 0px 0px 15px !important;
+}
+.checkouttxt {
+  text-align: left !important;
+  margin: 0px 0px 0px 14px !important;
+}
+.checkout {
+  border-left: solid;
+  border-right: solid;
+  border-color: #ebebeb;
+  border-width: 0.01em;
+}
+.loader {
+  margin: 11px 0px 11px 0px;
+}
+
+.subtotal {
+  padding: 11px 0px 11px 0px;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--in-range {
+  background-color: #40d9ac;
+}
+.react-datepicker__day--disabled {
+  background-color: white;
+}
+.react-datepicker__day--keyboard-selected {
+  background-color: white;
+  color: black;
+}
+.react-datepicker__day--in-selecting-range:hover,
+.react-datepicker__day--keyboard-selected:hover,
+.react-datepicker__day--in-selecting-range {
+  background-color: #40d9ac;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+  opacity: 1;
+}

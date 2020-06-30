@@ -1,0 +1,32 @@
+version: 2.1
+orbs:
+  node: circleci/node@1.1
+jobs:
+  build:
+    docker:
+      - image: circleci/node
+      - image: circleci/mysql:5.7-ram
+        environment:
+          - MYSQL_ROOT_PASSWORD=root
+          - MYSQL_USER=root
+          - MYSQL_PASSWORD= root
+          - MYSQL_ROOT_HOST=127.0.0.1
+          - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+    executor:
+      name: node/default
+      tag: '12.16.3'
+    steps:
+      - checkout
+      - run: sudo apt update 
+      - run: sudo apt-get install mysql-client
+      - node/with-cache:
+          steps:
+            - run: npm install
+      - run: mysql -h 127.0.0.1 -u root --password="root" < db/schema.sql
+      - run: npm run db:setup
+      - run: npm run test-server
+      # - run: 
+      #     name: server
+      #     command: npm run start
+      #     background: true
+      - run: npm run test-frontend

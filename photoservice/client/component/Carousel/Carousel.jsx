@@ -7,88 +7,17 @@ import {
   faAngleRight,
   faTimes,
 } from '@fortawesome/free-solid-svg-icons';
-import styled from 'styled-components';
 
-const Main = styled.div`
-  overflow: hidden;
-  display: grid;
-  position: fixed;
-  z-index: 3; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
-  grid-template-rows: 120px auto 50px;
-  grid-template-columns: 50px auto 50px;
-  grid-template-areas:
-    'num header close'
-    'previous carousel next'
-    '. description .';
-`;
-
-const Num = styled.div`
-  grid-area: num;
-  color: #8e9490;
-  padding-top: 10px;
-  padding-left: 10px;
-`;
-
-const Header = styled.div`
-  grid-area: header;
-  color: white;
-`;
-
-const CloseButton = styled.div`
-  grid-area: close;
-  cursor: pointer;
-  color: #8e9490;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: #f1f1f1;
-  font-size: 25px;
-  transition: 0.3s;
-`;
-
-const LeftArrow = styled.div`
-  cursor: pointer;
-  grid-area: previous;
-  color: #8e9490;
-  align-self: center;
-  justify-self: start;
-  padding-left: 10px;
-  &:hover {
-    font-size: 120%;
-  }
-`;
-
-const RightArrow = styled.div`
-  cursor: pointer;
-  grid-area: next;
-  color: #8e9490;
-  align-self: center;
-  justify-self: end;
-  padding-right: 10px;
-  &:hover {
-    font-size: 120%;
-  }
-`;
-const PhotoCarousel = styled.div`
-  grid-area: carousel;
-  justify-self: center;
-  align-self: center;
-  height: 650px;
-`;
-
-const Desc = styled.div`
-  grid-area: description;
-  color: white;
-  justify-self: center;
-  align-self: center;
-  padding-top: 10px;
-  padding-bottom: 30px;
-`;
+import {
+  Main,
+  Num,
+  Header,
+  CloseButton,
+  LeftArrow,
+  RightArrow,
+  PhotoCarousel,
+  Desc,
+} from './styled.carousel.js';
 
 class Carousel extends React.Component {
   constructor(props) {

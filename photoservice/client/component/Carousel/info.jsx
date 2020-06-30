@@ -1,91 +1,19 @@
 import React from 'react';
+import Helpful from './Helpful.jsx';
 import moment from 'moment';
 import axios from 'axios';
-// import {
-//   Header,
-//   LeftSection,
-//   RightSection,
-//   Avatar,
-//   Username,
-//   Time,
-//   Location,
-//   LikeButton,
-// } from './styled.info.js';
-
+import {
+  Header,
+  LeftSection,
+  RightSection,
+  Avatar,
+  Username,
+  Time,
+  Location,
+  LikeButton,
+} from './styled.info.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
-
-import styled from 'styled-components';
-
-const Header = styled.div`
-  display: grid;
-  grid-template-columns: 7fr 3fr;
-`;
-
-const LeftSection = styled.div`
-  grid-column: 1;
-  display: grid;
-  grid-template-rows: 2fr 1fr 1fr;
-  grid-template-columns: 4fr 1fr 6fr;
-  grid-template-areas:
-    '. avatar username'
-    '. avatar time'
-    '. location location';
-`;
-
-const Avatar = styled.img`
-  border-radius: 50%;
-  height: 55px;
-  width: 55px;
-  grid-area: avatar;
-  border-radius: 100%;
-  justify-self: start;
-  padding-top: 10px;
-`;
-
-const Username = styled.div`
-  font-size: 1.25rem;
-  grid-area: username;
-  padding-top: 15px;
-  justify-self: start;
-`;
-
-const Time = styled.div`
-  font-size: 0.85rem;
-  grid-area: time;
-  align-self: start;
-  padding-left: 5px;
-  padding-top: 0px;
-  color: gray;
-`;
-
-const Location = styled.div`
-  font-size: 0.85rem;
-  grid-area: location;
-  height: 100%;
-  justify-self: left;
-  padding-top: 5px;
-`;
-
-const RightSection = styled.div`
-  grid-column: 2;
-  align-self: center;
-`;
-
-const LikeButton = styled.button`
-  cursor: pointer;
-  width: 120px;
-  padding: 12px 0;
-  font-weight: 700;
-  font-size: 1.1rem;
-  text-align: center;
-  border: 1px solid transparent;
-  background-color: ${(props) => (props.isClicked === 1 ? 'gray' : '#40d9ac')};
-  color: white;
-  &:hover {
-    opacity: 0.8;
-  }
-`;
 
 class Info extends React.Component {
   constructor(props) {

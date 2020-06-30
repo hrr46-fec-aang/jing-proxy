@@ -7,7 +7,7 @@
   "scripts": {
     "build": "webpack -d --watch",
     "start": "nodemon ./server/server.js",
-    "mysql": "mysql -u root --password=\"root\" < db/schema.sql",
+    "mysql": "mysql -u root < db/schema.sql",
     "db:setup": "node db/seed.js",
     "test-server": "jest ./tests/server.test.js --detectOpenHandles",
     "test-frontend": "jest ./tests/frontend.test.js --detectOpenHandles"

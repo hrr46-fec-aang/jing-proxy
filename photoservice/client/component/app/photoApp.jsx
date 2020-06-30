@@ -1,30 +1,8 @@
 import React from 'react';
 import axios from 'axios';
+import { PhotoBanner, Navbar, ImageinBanner, Main } from './styled.app.js';
+
 import Carousel from '../Carousel/Carousel.jsx';
-import styled from 'styled-components';
-
-const PhotoBanner = styled.div`
-  height: 480px;
-  width: 100%;
-  display: flex;
-  overflow: hidden;
-`;
-
-const Navbar = styled.div`
-  height: 70px;
-  width: 100%;
-`;
-
-const ImageinBanner = styled.img`
-  height: 100%;
-  width: auto;
-  padding: 5px;
-  cursor: pointer;
-`;
-
-const Main = styled.div`
-  font-family: 'Calibre', Helvetica, Arial, sans-serif;
-`;
 
 class PhotoApp extends React.Component {
   constructor(props) {

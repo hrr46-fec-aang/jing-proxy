@@ -1,4 +1,4 @@
-body{
+body {
   font-family: sans-serif;
 }
 img {
@@ -27,7 +27,7 @@ img {
   transition: all 250ms;
 }
 
-.banner-search__input::-webkit-input-placeholder{
+.banner-search__input::-webkit-input-placeholder {
   color: #666;
   text-shadow: none;
   -webkit-text-fill-color: initial;
@@ -105,7 +105,7 @@ img {
 
 @media (max-width: 720px) {
   .banner-sub {
-      display: none;
+    display: none;
   }
 }
 .banner {
@@ -127,8 +127,6 @@ img {
   background-size: 30px;
   background-repeat: no-repeat;
   background-position: 0% 40%;
-
-
 }
 
 .banner__mobile {
@@ -183,7 +181,7 @@ img {
 }
 
 .banner__item:hover {
-color:  #40d9ac;
+  color: #40d9ac;
 }
 
 .banner__item--active {
@@ -214,16 +212,19 @@ color:  #40d9ac;
 }
 
 @media (max-width: 720px) {
-  .banner__mobile { display: block; }
-  .banner__items { display: none; }
+  .banner__mobile {
+    display: block;
+  }
+  .banner__items {
+    display: none;
+  }
   .banner--search .banner__logo {
-      pointer-events: none;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-      margin-right: -35px;
-      letter-spacing: -1em;
-      opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-right: -35px;
+    letter-spacing: -1em;
+    opacity: 0;
   }
 }
-

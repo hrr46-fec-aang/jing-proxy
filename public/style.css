@@ -3,11 +3,11 @@ body {
 }
 .container {
   display: grid;
-  grid-template-columns: 15% 60% 25%;
+  grid-template-columns: 15% 55% 30%;
 }
 #listing {
   grid-column-start: 2;
   position: absolute;
-  width: 60vw;
+  width: 55vw;
   height: 80%;
 }

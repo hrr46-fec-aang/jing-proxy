@@ -16,7 +16,6 @@ const ListedBy = styled.div`
   line-height: 1.2;
   padding-right: 15px;
   position: relative;
-  width: 66.66666667%;
 `;
 
 const Avatar = styled.img`
@@ -43,14 +42,14 @@ const HostInfo = styled.div`
 
 const HostBy = styled.span`
   font-weight: 500 !important;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.2;
 `;
 
 const HostName = styled.div`
   line-height: 1.2;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: inherit;
   background-color: transparent;
 `;

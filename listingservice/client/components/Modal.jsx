@@ -23,11 +23,10 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 const ModalDiv = styled.div`
-  width: 430px;
-  position: relative;
-  margin-top: 30px;
+  width: 380px;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-right: auto;
-  margin-bottom: 30px;
   margin-left: auto;
 `;
 
@@ -54,7 +53,7 @@ const ModalButton = styled.div`
   font-weight: 400;
   opacity: 1;
   float: none;
-  z-index: 1;
+  z-index: 20;
   margin-top: -2px;
   cursor: pointer;
   color: #000;

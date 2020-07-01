@@ -16,8 +16,8 @@ const CardDiv = styled.div`
   padding: 15px 5px 15px 15px;
   flex-wrap: wrap;
   line-height: 1.4;
-  width: 220px;
-  height: 340px;
+  width: 13vw;
+  height: 300px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) !important;
 `;
 
@@ -58,7 +58,7 @@ const MoreInfo = styled.div`
   left: 18px;
   color: #40d9ac;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.4;
 `;
 
@@ -66,7 +66,7 @@ const MoreInfoText = styled.a`
   cursor: pointer;
   color: #40d9ac;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 `;
 
 const EssCard = function (props) {

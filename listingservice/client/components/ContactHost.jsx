@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const ContactDiv = styled.div`
   margin-top: 10px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 `;
 
 const Question = styled.strong`

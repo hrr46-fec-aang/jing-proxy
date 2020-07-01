@@ -18,13 +18,13 @@ const CardDiv = styled.div`
   padding: 15px 5px 15px 15px;
   flex-wrap: wrap;
   line-height: 1.4;
-  width: 220px;
-  height: 340px;
+  width: 13vw;
+  height: 300px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) !important;
 `;
 
 const CardTitle = styled.div`
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 500;
   margin-bottom: 10px;
   margin-left: 4px;
@@ -46,12 +46,12 @@ const Icon = styled.div`
 `;
 
 const IconInfo = styled.span`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 `;
 
 const CardText = styled.div`
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
 `;
 
 const MoreInfo = styled.div`
@@ -60,7 +60,7 @@ const MoreInfo = styled.div`
   left: 18px;
   color: #40d9ac;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.4;
 `;
 
@@ -68,7 +68,7 @@ const MoreInfoText = styled.a`
   cursor: pointer;
   color: #40d9ac;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
 `;
 
 const CampCard = function (props) {

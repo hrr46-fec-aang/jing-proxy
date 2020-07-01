@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const DesWrapper = styled.div`
   margin-bottom: 40px;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   box-sizing: border-box;
   display: block;
 `;

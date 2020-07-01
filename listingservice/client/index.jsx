@@ -20,30 +20,33 @@ const ListingDiv = styled.div`
   font-weight: 400;
   font-family: 'Calibre', Helvetica, Arial, sans-serif;
   font-size: 7px;
-  line-height: 1.42;
+  line-height: 1.3;
   color: #333333;
   background-color: white;
+  width: 65vw;
 `;
 
 const HeaderDiv = styled.div`
-  padding-top: 25px;
-  padding-bottom: 25px;
-  font-size: 1.3rem;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  font-size: 1rem;
 `;
 
 const Container = styled.section`
   margin: 0;
-  padding-top: 20px;
+  padding-top: 10px;
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
+  width: 75%;
 `;
 
 const Overview = styled.div`
   margin-left: -10px;
-  margin-right: -10px;
+  /* margin-right: -10px; */
   display: grid;
-  grid-template-columns: 33% 67%;
-  padding: 10px;
+  grid-template-columns: 30% 70%;
+  grid-gap:0px
+  padding: 5px;
   grid-row: 2 / 1;
 `;
 

@@ -1,13 +1,35 @@
 body {
   position: relative;
+  font-family: 'Calibre', Helvetica, Arial, sans-serif;
 }
-.container {
-  display: grid;
-  grid-template-columns: 15% 55% 30%;
-}
+
 #listing {
-  grid-column-start: 2;
-  position: absolute;
-  width: 55vw;
-  height: 80%;
+  display: block;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#booking {
+  position: sticky;
+  top: -20px;
+  width: 100%;
+  margin-top: -80px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 15%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
+.placeholder {
+  height: 1200px;
 }

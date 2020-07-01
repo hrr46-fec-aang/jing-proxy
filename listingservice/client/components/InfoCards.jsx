@@ -19,7 +19,7 @@ class InfoCards extends React.Component {
     this.state = {
       disp: false,
       name: undefined,
-      info: undefined
+      info: undefined,
     };
   }
 
@@ -27,14 +27,14 @@ class InfoCards extends React.Component {
     this.setState({
       disp: true,
       name: name,
-      info: cardInfo
+      info: cardInfo,
     });
   }
 
   hideModal() {
     this.setState({
       disp: false,
-      name: undefined
+      name: undefined,
     });
   }
 
@@ -44,13 +44,38 @@ class InfoCards extends React.Component {
     var cardInfo = this.state.info;
     var name = this.state.name;
     if (show) {
-      return ( <Modal disp={show} cardInfo={cardInfo} name={name}handleClose={() => this.hideModal()}></Modal>);
+      return (
+        <Modal
+          disp={show}
+          cardInfo={cardInfo}
+          name={name}
+          handleClose={() => this.hideModal()}
+        ></Modal>
+      );
     } else {
       return (
         <CardWrapper>
-          <CampCard name='Campsite area' cardInfo={curr.info.area} handleClick={(e, name, cardInfo) => this.changeView(e, name, cardInfo)}/>
-          <EssCard name='Essentials' cardInfo={curr.info.ess} handleClick={(e, name, cardInfo) => this.changeView(e, name, cardInfo)}/>
-          <AmntCard name='Amenities' cardInfo={curr.info.amnt} handleClick={(e, name, cardInfo) => this.changeView(e, name, cardInfo)}/>
+          <CampCard
+            name="Campsite area"
+            cardInfo={curr.info.area}
+            handleClick={(e, name, cardInfo) =>
+              this.changeView(e, name, cardInfo)
+            }
+          />
+          <EssCard
+            name="Essentials"
+            cardInfo={curr.info.ess}
+            handleClick={(e, name, cardInfo) =>
+              this.changeView(e, name, cardInfo)
+            }
+          />
+          <AmntCard
+            name="Amenities"
+            cardInfo={curr.info.amnt}
+            handleClick={(e, name, cardInfo) =>
+              this.changeView(e, name, cardInfo)
+            }
+          />
         </CardWrapper>
       );
     }

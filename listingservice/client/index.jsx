@@ -18,8 +18,8 @@ const ListingDiv = styled.div`
   display: block;
   box-sizing: border-box;
   font-weight: 400;
-  font-family: "Calibre", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-family: 'Calibre', Helvetica, Arial, sans-serif;
+  font-size: 7px;
   line-height: 1.42;
   color: #333333;
   background-color: white;
@@ -28,7 +28,7 @@ const ListingDiv = styled.div`
 const HeaderDiv = styled.div`
   padding-top: 25px;
   padding-bottom: 25px;
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 `;
 
 const Container = styled.section`
@@ -37,7 +37,6 @@ const Container = styled.section`
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
 `;
-
 
 const Overview = styled.div`
   margin-left: -10px;
@@ -59,7 +58,7 @@ class ListingApp extends React.Component {
     super();
     this.state = {
       site: '',
-      mounted: false
+      mounted: false,
     };
   }
 
@@ -70,12 +69,10 @@ class ListingApp extends React.Component {
     if (id === '/') {
       // do nothing
     } else {
-      $.get('http://localhost:3002/site' + id)
-        .then(function(res) {
-          state.setState({site: res});
-          state.setState({mounted: true});
-        }
-        );
+      $.get('http://localhost:3002/site' + id).then(function (res) {
+        state.setState({ site: res });
+        state.setState({ mounted: true });
+      });
     }
   }
 
@@ -85,17 +82,17 @@ class ListingApp extends React.Component {
       return (
         <ListingDiv>
           <HeaderDiv>
-            <Header info={state.state.site.site}/>
+            <Header info={state.state.site.site} />
           </HeaderDiv>
           <Container>
             <Overview>
-              <Host info={state.state.site}/>
-              <Desc info={state.state.site}/>
+              <Host info={state.state.site} />
+              <Desc info={state.state.site} />
             </Overview>
             <Cards>
-              <InfoCards info={state.state.site}/>
+              <InfoCards info={state.state.site} />
             </Cards>
-            <ContactHost info={state.state.site}/>
+            <ContactHost info={state.state.site} />
           </Container>
         </ListingDiv>
       );

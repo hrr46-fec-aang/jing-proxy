@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const ContactDiv = styled.div`
   margin-top: 10px;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 `;
 
 const Question = styled.strong`
@@ -15,7 +15,7 @@ const Contact = styled.a`
   color: #40d9ac;
 `;
 
-const ContactHost = function(props) {
+const ContactHost = function (props) {
   return (
     <ContactDiv>
       <Question>Have a question?</Question>

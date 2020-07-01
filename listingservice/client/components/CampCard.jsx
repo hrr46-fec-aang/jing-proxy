@@ -2,8 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faUser} from '@fortawesome/free-regular-svg-icons';
-import {faMapMarkerAlt, faCampground, faParking, faWheelchair} from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-regular-svg-icons';
+import {
+  faMapMarkerAlt,
+  faCampground,
+  faParking,
+  faWheelchair,
+} from '@fortawesome/free-solid-svg-icons';
 
 const CardDiv = styled.div`
   margin: 0 10px 20px 10px;
@@ -15,11 +20,11 @@ const CardDiv = styled.div`
   line-height: 1.4;
   width: 220px;
   height: 340px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.08) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) !important;
 `;
 
 const CardTitle = styled.div`
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 10px;
   margin-left: 4px;
@@ -33,8 +38,7 @@ const Info = styled.div`
   position: relative;
 `;
 
-const VertIcon = styled.div`
-`;
+const VertIcon = styled.div``;
 
 const Icon = styled.div`
   position: relative;
@@ -42,11 +46,11 @@ const Icon = styled.div`
 `;
 
 const IconInfo = styled.span`
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 `;
 
 const CardText = styled.div`
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 2rem;
 `;
 
@@ -56,7 +60,7 @@ const MoreInfo = styled.div`
   left: 18px;
   color: #40d9ac;
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   line-height: 1.4;
 `;
 
@@ -64,10 +68,10 @@ const MoreInfoText = styled.a`
   cursor: pointer;
   color: #40d9ac;
   font-weight: 500;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 `;
 
-const CampCard = function(props) {
+const CampCard = function (props) {
   return (
     <CardDiv>
       <CardTitle>{props.name}</CardTitle>
@@ -75,7 +79,7 @@ const CampCard = function(props) {
         <VertIcon>
           <Icon>
             <IconInfo>
-              <FontAwesomeIcon icon={faCampground}/>
+              <FontAwesomeIcon icon={faCampground} />
             </IconInfo>
           </Icon>
         </VertIcon>
@@ -85,7 +89,7 @@ const CampCard = function(props) {
         <VertIcon>
           <Icon>
             <IconInfo>
-              <FontAwesomeIcon icon={faMapMarkerAlt}/>
+              <FontAwesomeIcon icon={faMapMarkerAlt} />
             </IconInfo>
           </Icon>
         </VertIcon>
@@ -95,7 +99,7 @@ const CampCard = function(props) {
         <VertIcon>
           <Icon>
             <IconInfo>
-              <FontAwesomeIcon icon={faUser}/>
+              <FontAwesomeIcon icon={faUser} />
             </IconInfo>
           </Icon>
         </VertIcon>
@@ -105,7 +109,7 @@ const CampCard = function(props) {
         <VertIcon>
           <Icon>
             <IconInfo>
-              <FontAwesomeIcon icon={faParking}/>
+              <FontAwesomeIcon icon={faParking} />
             </IconInfo>
           </Icon>
         </VertIcon>
@@ -115,14 +119,20 @@ const CampCard = function(props) {
         <VertIcon>
           <Icon>
             <IconInfo>
-              <FontAwesomeIcon icon={faWheelchair}/>
+              <FontAwesomeIcon icon={faWheelchair} />
             </IconInfo>
           </Icon>
         </VertIcon>
         <CardText>{props.cardInfo.ada}</CardText>
       </Info>
       <MoreInfo>
-        <MoreInfoText onClick={(e, name, cardInfo ) => props.handleClick(e, props.name, props.cardInfo) }>More details</MoreInfoText>
+        <MoreInfoText
+          onClick={(e, name, cardInfo) =>
+            props.handleClick(e, props.name, props.cardInfo)
+          }
+        >
+          More details
+        </MoreInfoText>
       </MoreInfo>
     </CardDiv>
   );

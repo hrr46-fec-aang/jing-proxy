@@ -24,7 +24,7 @@ const Avatar = styled.img`
   height: 90px;
   width: 90px;
   border: 2px solid #fff;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
   background-color: #ebebeb;
   background-repeat: no-repeat;
   background-size: cover;
@@ -43,23 +43,22 @@ const HostInfo = styled.div`
 
 const HostBy = styled.span`
   font-weight: 500 !important;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.2;
 `;
 
 const HostName = styled.div`
   line-height: 1.2;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   color: inherit;
   background-color: transparent;
 `;
 
-const Host = function(props) {
-
+const Host = function (props) {
   var overview = props.info.site.desc.slice(0, 300);
 
-  var clickHandler = function() {
+  var clickHandler = function () {
     overview = props.info.site.desc;
     return overview;
   };

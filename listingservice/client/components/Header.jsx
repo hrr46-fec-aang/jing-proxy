@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faFileUpload, faCamera, faThumbsUp} from '@fortawesome/free-solid-svg-icons';
+import {
+  faFileUpload,
+  faCamera,
+  faThumbsUp,
+} from '@fortawesome/free-solid-svg-icons';
 
-const Wrapper = styled.div`
-
-`;
+const Wrapper = styled.div``;
 const Loc = styled.p``;
 const Title = styled.h1``;
 const Action = styled.div``;
@@ -24,7 +26,6 @@ const ActionRight = styled.div`
   display: flex;
   margin-top: 20px;
   width: 50%;
-
 `;
 
 const Thumb = styled.div`
@@ -64,27 +65,39 @@ const Share = styled.div`
   justify-content: center;
   height: 48px;
   width: 48px;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   margin-right: 10px;
   padding-left: 10px;
   padding-right: 10px;
 `;
 
-const Header = function(props) {
+const Header = function (props) {
   return (
     <Wrapper>
-      <Loc>United States, {props.info.state}, {props.info.site}</Loc>
+      <Loc>
+        United States, {props.info.state}, {props.info.site}
+      </Loc>
       <Title>{props.info.prop}</Title>
       <Action>
         <ActionLeft>
-          <Thumb> <FontAwesomeIcon icon={faThumbsUp}/>100%</Thumb>Recommend
+          <Thumb>
+            {' '}
+            <FontAwesomeIcon icon={faThumbsUp} />
+            100%
+          </Thumb>
+          Recommend
         </ActionLeft>
         <ActionRight>
-          <Photo> <FontAwesomeIcon icon={faCamera}/>Upload</Photo>
+          <Photo>
+            {' '}
+            <FontAwesomeIcon icon={faCamera} />
+            Upload
+          </Photo>
           <Save>Save to List</Save>
-          <Share><FontAwesomeIcon icon={faFileUpload}/></Share>
+          <Share>
+            <FontAwesomeIcon icon={faFileUpload} />
+          </Share>
         </ActionRight>
-
       </Action>
     </Wrapper>
   );

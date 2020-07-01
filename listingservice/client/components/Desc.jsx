@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const DesWrapper = styled.div`
   margin-bottom: 40px;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   box-sizing: border-box;
   display: block;
 `;
@@ -24,22 +24,23 @@ class Desc extends React.Component {
     super(props);
     this.state = {
       read: false,
-      overview: this.props.info.site.desc
+      overview: this.props.info.site.desc,
     };
   }
 
   clickHandler(e) {
-    this.setState({read: true});
-    this.setState({overview: this.props.info.site.desc});
+    this.setState({ read: true });
+    this.setState({ overview: this.props.info.site.desc });
   }
 
   render() {
     if (this.state.read) {
       return (
         <DesWrapper>
-          <Info key={this.props.info.site._id}>{this.state.overview.split('\n').map((para) => (
-            <p key={this.props.info.site.desc.indexOf(para)}>{para}</p>
-          ))}
+          <Info key={this.props.info.site._id}>
+            {this.state.overview.split('\n').map((para) => (
+              <p key={this.props.info.site.desc.indexOf(para)}>{para}</p>
+            ))}
           </Info>
         </DesWrapper>
       );
@@ -47,7 +48,10 @@ class Desc extends React.Component {
       return (
         <DesWrapper key={this.props.info.site._id}>
           {this.state.overview.slice(0, 300)}
-          <ReadMore onClick={(e) => this.clickHandler(e)}> Read more...</ReadMore>
+          <ReadMore onClick={(e) => this.clickHandler(e)}>
+            {' '}
+            Read more...
+          </ReadMore>
         </DesWrapper>
       );
     }

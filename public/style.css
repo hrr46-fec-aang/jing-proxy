@@ -1,0 +1,13 @@
+body {
+  position: relative;
+}
+.container {
+  display: grid;
+  grid-template-columns: 15% 60% 25%;
+}
+#listing {
+  grid-column-start: 2;
+  position: absolute;
+  width: 60vw;
+  height: 80%;
+}

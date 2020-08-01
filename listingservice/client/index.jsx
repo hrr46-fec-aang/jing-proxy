@@ -70,7 +70,7 @@ class ListingApp extends React.Component {
     var id = window.location.pathname;
 
     if (id === '/') {
-      // do nothing
+      //do nothing
     } else {
       $.get('http://localhost:3002/site' + id).then(function (res) {
         state.setState({ site: res });
